@@ -6,9 +6,42 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+    <div class="primeraPagina">
+      
+      <h1 class="titulo">Bienvenida</h1>
+      <p class="centrado">Aquí puedes obtener tu mensaje cifrado de forma segura y anónima!</p>
+      <p class="centrado">Primero elige número </p>
+      <input class="centrado" type="number" id=numeroCifrar maxlength="2" name="numero" min="1" max="44">
+        <p class="centrado" >Escribe tu mensaje </p>
+  
+        <textarea class="centrado" id="mensajeCifrar" rows="10" cols="40"></textarea>
+        <br>
+        <button class="centrado" id="botonCifrar">Cifrar</button>
+        <br/>
+        <button class="centrado" id="copiar">Copiar</button>
+        <br/>
+        <button class="centrado" id="botonCambioPagina">Ir a descifrar</button>
+       
+      </div>
+  
+  
+  
+      <div class="segundaPagina">
+   
+
+        
+        <p class="centrado">Aquí puedes desifrar el mensaje que te enviaron, debes pedir el número que ingresaron </p>
+        <input class="centrado" type="number" id=numeroDescifrar size="6" maxlength="2" value="numero" name="numero" min="1" max="44">
+        <p class="centrado">Pega el mensaje a decifrar</p>
+        <textarea class="centrado" id="mensajeDescifrar"  rows="10" cols="40"></textarea>
+        <br>
+        <button class="centrado" id="botonDescifrar">Descifrar</button>
+        <br>
+        <br>
+        <button class="centrado" id="botonVolver">Volver</button>
+      </div>
+  
+
     <script src="index.js" type="module"></script>
   </body>
 </html>

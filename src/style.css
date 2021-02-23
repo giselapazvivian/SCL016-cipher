@@ -1,0 +1,22 @@
+.primeraPagina{
+display:block;
+}
+.segundaPagina{
+display:none;
+}
+
+/* body{
+    font-family: roboto;
+    background-image: url("images/rosas2.jpg");
+    background-size: 100%;
+  }
+
+  h1{
+    text-align: center;
+    background-color:3F025C;
+  
+  }
+  .centrado{
+    margin: 4% 4% 4% 20%;
+  }
+  */
