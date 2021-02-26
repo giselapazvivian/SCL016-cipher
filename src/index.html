@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="primeraPagina">
-      
-      <h1 class="titulo">Bienvenida</h1>
-      <p class="centrado">Aquí puedes obtener tu mensaje cifrado de forma segura y anónima!</p>
-      <p class="centrado">Primero elige número </p>
-      <input class="centrado" type="number" id=numeroCifrar maxlength="2" name="numero" min="1" max="44">
-        <p class="centrado" >Escribe tu mensaje </p>
-  
-        <textarea class="centrado" id="mensajeCifrar" rows="10" cols="40"></textarea>
-        <br>
-        <button class="centrado" id="botonCifrar">Cifrar</button>
-        <br/>
-        <button class="centrado" id="copiar">Copiar</button>
-        <br/>
-        <button class="centrado" id="botonCambioPagina">Ir a descifrar</button>
-       
-      </div>
-  
-  
-  
-      <div class="segundaPagina">
-   
 
-        
-        <p class="centrado">Aquí puedes desifrar el mensaje que te enviaron, debes pedir el número que ingresaron </p>
-        <input class="centrado" type="number" id=numeroDescifrar size="6" maxlength="2" value="numero" name="numero" min="1" max="44">
-        <p class="centrado">Pega el mensaje a decifrar</p>
-        <textarea class="centrado" id="mensajeDescifrar"  rows="10" cols="40"></textarea>
-        <br>
-        <button class="centrado" id="botonDescifrar">Descifrar</button>
-        <br>
-        <br>
-        <button class="centrado" id="botonVolver">Volver</button>
-      </div>
-  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <title>cifrado</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <script src="index.js" type="module"></script>
-  </body>
+<body>
+  <div class="primeraPagina">
+    <header class="titulo">Bienvenida</header>
+    <section>
+      <p class="texto">Aquí puedes obtener tu mensaje cifrado de forma segura y anónima!</p>
+      <p class="texto">Primero elige número </p>
+      <input type="number" id="numeroCifrar" size="6" maxlength="2" min="1" max="33">
+      <p class="texto">Escribe tu mensaje </p>
+      <textarea id="mensajeCifrar" rows="8" cols="30"></textarea>
+      <br />
+      <button class="boton" id="botonCifrar">Cifrar</button>
+      <br />
+      <button class="boton" id="botonCambioPagina">Ir a descifrar</button>
+    </section>
+  </div>
+
+  <div class="segundaPagina">
+    <header class="titulo">Descifrado</header>
+    <section>
+      <p class="texto">Aquí puedes desifrar el mensaje que te enviaron, debes pedir el número que ingresaron </p>
+      <input type="number" id="numeroDescifrar" size="6" maxlength="2" min="1" max="33">
+      <p class="texto">Pega el mensaje a decifrar</p>
+      <textarea id="mensajeDescifrar" rows="9" cols="30"></textarea>
+      <br>
+      <button class="boton" id="botonDescifrar">Descifrar</button>
+      <br>
+      <button class="boton" id="botonVolver">Volver</button>
+    </section>
+  </div>
+
+
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>

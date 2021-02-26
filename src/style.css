@@ -5,18 +5,26 @@ display:block;
 display:none;
 }
 
-/* body{
+body{
     font-family: roboto;
     background-image: url("images/rosas2.jpg");
     background-size: 100%;
-  }
+    }
 
-  h1{
+  header{
     text-align: center;
-    background-color:3F025C;
-  
-  }
-  .centrado{
-    margin: 4% 4% 4% 20%;
-  }
-  */
+    margin-top:25%;
+    font-weight:bold;
+    font-size: 140%;
+    }
+  section{
+    margin-top:5%;
+    text-align:center;
+    }
+  .texto{
+    margin-right: 20%;
+    margin-left:20% ;
+    }
+  .boton{
+    margin-top:3%; 
+    } 
